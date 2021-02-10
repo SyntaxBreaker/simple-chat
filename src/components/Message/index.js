@@ -12,11 +12,11 @@ function Message({ message }) {
     return (
         <div className="message">
             <div className="message__profile">
-                <img src={message.photoURL} alt="Avatar" />
+                <img className="message__profile__avatar" src={message.photoURL} alt="Avatar" />
             </div>
             <div className="message__container">
-                <h1>{message.displayName}</h1>
-                <h2>{message.value}</h2>
+                <h1 className="message_container__author">{message.displayName}</h1>
+                <h2 className="message_container__body">{message.value}</h2>
                 {user && message.uid === user.uid && <button onClick={() => removeMessage()}>Delete message</button>}
             </div>
         </div>

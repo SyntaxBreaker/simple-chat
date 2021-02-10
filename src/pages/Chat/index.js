@@ -57,8 +57,8 @@ function Chat() {
                 <MessageList messages={data} />
                 <div className="chat__form">
                     <form onSubmit={(event) => handleSubmit(event)}>
-                        <input type="text" name="msg" value={newMessage.value} onChange={(event) => handleChange(event)} />
-                        <input type="submit" value="Submit" />
+                        <input className="chat__form__input" type="text" name="msg" value={newMessage.value} onChange={(event) => handleChange(event)} />
+                        <input className="chat__form__input" type="submit" value="Submit" />
                     </form>
                 </div>
             </div>

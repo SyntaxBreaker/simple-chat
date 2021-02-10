@@ -3,9 +3,9 @@ import { signOut } from '../../firebase/firebase';
 
 function Header() {
     return (
-        <header className="navbar">
-            <h1>Chat</h1>
-            <button onClick={signOut}>Logout</button>
+        <header className="header">
+            <h1 className="header__title">Chat</h1>
+            <button className="header__button" onClick={signOut}>Logout</button>
         </header>
     )
 }
