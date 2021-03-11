@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Chat from '../../pages/Chat';
 import SignIn from '../../pages/SignIn';
 import { UserContext } from '../../providers/UserProvider';
@@ -11,6 +11,10 @@ import {
 
 function Application() {
   const user = useContext(UserContext);
+  
+  useEffect(() => {
+    document.title = "Chat"
+  }, [])
 
   return (
     <>
