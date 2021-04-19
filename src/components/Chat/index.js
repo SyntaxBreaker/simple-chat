@@ -1,9 +1,9 @@
 import React, { useEffect, useContext, useState } from 'react';
 import { UserContext } from '../../providers/UserProvider';
 import { db } from '../../firebase/firebase';
-import MessageList from '../../components/MessageList';
+import MessageList from '../MessageList';
 import firebase from 'firebase';
-import Header from '../../components/Header';
+import Header from '../Header';
 
 function Chat() {
     const user = useContext(UserContext);
@@ -55,12 +55,12 @@ function Chat() {
             <div className="chat">
                 <Header />
                 <MessageList messages={data} />
-                <div className="chat__form">
+                {user ? <div className="chat__form">
                     <form onSubmit={(event) => handleSubmit(event)}>
                         <input className="chat__form__input" type="text" name="msg" value={newMessage.value} onChange={(event) => handleChange(event)} />
                         <input className="chat__form__input" type="submit" value="Submit" />
                     </form>
-                </div>
+                </div> : ''}
             </div>
         </div>
     )

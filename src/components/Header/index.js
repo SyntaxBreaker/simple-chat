@@ -1,11 +1,14 @@
-import React from 'react';
-import { signOut } from '../../firebase/firebase';
+import React, {useContext} from 'react';
+import { UserContext } from '../../providers/UserProvider';
+import { signInWithGoogle, signOut } from '../../firebase/firebase';
 
 function Header() {
+    const user = useContext(UserContext);
+
     return (
         <header className="header">
             <h1 className="header__title">Chat</h1>
-            <button className="header__button" onClick={signOut}>Logout</button>
+            {user ? <button className="header__button" onClick={signOut}>Logout</button> : <button className="header__button" onClick={signInWithGoogle}>Sign in</button> }
         </header>
     )
 }

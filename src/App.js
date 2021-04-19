@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
 import UserProvider from './providers/UserProvider';
-import Application from './components/Application';
+import Chat from './components/Chat';
 
 
 function App() {
   return (
     <UserProvider>
       <div className="App">
-        <Application />
+        <Chat />
       </div>
     </UserProvider>
   );
