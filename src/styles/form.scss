@@ -1,0 +1,25 @@
+.form {
+    margin: 1% auto;
+    display: flex;
+    justify-content: center;
+
+    &__input--text {
+        color: black;
+        font-size: 14px;
+        width: 45%;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+    }
+
+    &__input--submit {
+        width: 14%;
+        padding: 7px;
+        margin-left: 3px;
+        border: 0;
+        color: #eef2f1;
+        background-color: #2c3035;
+        font-weight: bold;
+      }
+}

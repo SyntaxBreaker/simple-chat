@@ -1,0 +1,32 @@
+.message {
+  display: flex;
+  margin: 8px 0;
+  gap: 8px;
+
+  &__profile {
+    padding: 4px 0 0 8px;
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    height: 35px;
+  }
+
+  &__container {
+    display: flex;
+    width: 98%;
+    flex-direction: column;
+    padding: 8px;
+    background-color: silver;
+    row-gap: 12px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  &__button {
+    width: 150px;
+  }
+}

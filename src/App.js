@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './styles/global.scss';
 import UserProvider from './providers/UserProvider';
 import Chat from './components/Chat';
 

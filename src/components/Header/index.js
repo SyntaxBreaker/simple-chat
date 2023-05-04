@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import { UserContext } from '../../providers/UserProvider';
 import { signInWithGoogle, signOut } from '../../firebase/firebase';
+import '../../styles/header.scss';
 
 function Header() {
     const user = useContext(UserContext);

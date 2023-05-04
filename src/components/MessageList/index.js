@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import Message from '../Message';
+import '../../styles/messageList.scss'
 
 function MessageList({ messages }) {
     
