@@ -1,25 +1,32 @@
+@use './variables';
+
 .form {
-    margin: 1% auto;
+    margin: 24px auto;
+    max-width: 768px;
+    width: 94%;
     display: flex;
     justify-content: center;
+    background-color: variables.$quaternary-color;
+    padding: 4px 8px;
+    border-radius: 4px;
 
     &__input--text {
         color: black;
         font-size: 14px;
-        width: 45%;
+        width: 75%;
         background: transparent;
         border: none;
-        border-bottom: 1px solid black;
         outline: none;
     }
 
     &__input--submit {
-        width: 14%;
+        width: 25%;
         padding: 7px;
         margin-left: 3px;
         border: 0;
-        color: #eef2f1;
-        background-color: #2c3035;
+        border-radius: 2px;
+        color: variables.$tertiary-color;
+        background-color: variables.$primary-color;
         font-weight: bold;
-      }
+    }
 }

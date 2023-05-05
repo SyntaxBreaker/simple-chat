@@ -1,12 +1,15 @@
+@use './variables';
+
 .header {
-  background-color: #2c3035;
-  color: #eef2f1;
+  background-color: variables.$primary-color;
+  color: variables.$tertiary-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 8px;
 
   &__button {
-    background-color: #74737c;
+    background-color: variables.$quaternary-color;
+    color: black;
   }
 }
