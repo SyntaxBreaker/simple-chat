@@ -2,17 +2,14 @@
 
 .message {
   display: flex;
-  width: 100%;
+  width: fit-content;
+  max-width: 568px;
   margin: 8px 0;
   gap: 8px;
 
   &--mine {
     flex-direction: row-reverse;
     align-self: flex-end;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 80%;
   }
 
   &__profile {
