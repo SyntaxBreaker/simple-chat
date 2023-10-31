@@ -34,7 +34,7 @@ function Form() {
 
     return (
         <form className="form" onSubmit={(event) => handleSubmit(event)}>
-            <input className="form__input--text" type="text" name="msg" placeholder="Type your message here..." value={newMessage.value} onChange={(event) => handleChange(event)} />
+            <textarea className="form__input--text" type="text" name="msg" placeholder="Type your message here..." value={newMessage.value} onChange={(event) => handleChange(event)} />
             <input className="form__input--submit" type="submit" value="Send" />
         </form>
     )
