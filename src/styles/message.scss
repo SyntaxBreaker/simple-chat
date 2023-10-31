@@ -49,5 +49,9 @@
     width: 150px;
     background-color: #ffffff;
     color: black;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

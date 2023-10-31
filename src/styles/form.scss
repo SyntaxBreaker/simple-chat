@@ -33,5 +33,9 @@
         color: variables.$primary-color;
         background-color: white;
         font-weight: bold;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
