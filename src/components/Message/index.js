@@ -11,11 +11,11 @@ function Message({ message }) {
     }
 
     return (
-        <div className="message">
+        <div className={user && message.uid === user.uid ? 'message message--mine' : 'message'}>
             <div className="message__profile">
                 <img className="message__avatar" src={message.photoURL} alt="Avatar" />
             </div>
-            <div className="message__container">
+            <div className={user && message.uid === user.uid ? 'message__container message__container--mine' : 'message__container'}>
                 <h2 className="message__author">{message.displayName}</h2>
                 <p className="message__text">{message.value}</p>
                 {user && message.uid === user.uid && <button className="message__button" onClick={() => removeMessage()}>Delete message</button>}

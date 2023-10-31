@@ -6,17 +6,22 @@
     width: 94%;
     display: flex;
     justify-content: center;
-    background-color: variables.$quaternary-color;
+    background-color: variables.$primary-color;
+    color: white;
     padding: 4px 8px;
     border-radius: 4px;
 
     &__input--text {
-        color: black;
+        color: white;
         font-size: 14px;
         width: 75%;
         background: transparent;
         border: none;
         outline: none;
+
+        &::placeholder {
+            color: white;
+        }
     }
 
     &__input--submit {
@@ -25,8 +30,8 @@
         margin-left: 3px;
         border: 0;
         border-radius: 2px;
-        color: variables.$tertiary-color;
-        background-color: variables.$primary-color;
+        color: variables.$primary-color;
+        background-color: white;
         font-weight: bold;
     }
 }

@@ -12,8 +12,7 @@ body {
 }
 
 .App {
-  background-color: #1C1C24;
-  color: variables.$primary-color;
+  color: white;
   max-height: 100vh;
   height: 100vh;
   width: 100%;
@@ -29,11 +28,11 @@ h2 {
 }
 
 div::-webkit-scrollbar-track {
-  background-color: variables.$tertiary-color;
+  background-color: white;
 }
 
 div::-webkit-scrollbar {
-  background-color: variables.$tertiary-color;
+  background-color: white;
 }
 
 div::-webkit-scrollbar-thumb {
@@ -47,7 +46,7 @@ div::-webkit-scrollbar-thumb {
 button {
   padding: 8px;
   border: 0;
-  color: variables.$tertiary-color;
+  color: white;
   background-color: variables.$primary-color;
   border-radius: 2px;
 }

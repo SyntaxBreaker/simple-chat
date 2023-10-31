@@ -2,8 +2,18 @@
 
 .message {
   display: flex;
+  width: 100%;
   margin: 8px 0;
   gap: 8px;
+
+  &--mine {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 80%;
+  }
 
   &__profile {
     padding: 4px 0 0 8px;
@@ -19,9 +29,15 @@
     width: 98%;
     flex-direction: column;
     padding: 8px;
-    background-color: variables.$quaternary-color;
+    background-color: variables.$secondary-color;
     row-gap: 12px;
-    border-radius: 4px;
+    border-radius: 8px;
+    color: black;
+
+    &--mine {
+      background-color: variables.$primary-color;
+      color: white;
+    }
   }
 
   &__text {
@@ -31,5 +47,7 @@
 
   &__button {
     width: 150px;
+    background-color: #ffffff;
+    color: black;
   }
 }
